@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tool Hack</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="nav1 header-text">
+        <p><i class="fa fa-arrow-left" aria-hidden="true"></i>  Tool Hack</p>
+    </div>
+  <div class="wrapper">
+    <input type="radio" name="slider" id="tab-1">
+    <input type="radio" name="slider" id="tab-2" checked>
+    <input type="radio" name="slider" id="tab-3">
+    <header>
+      <label for="tab-1" class="tab-1">Check Pos</label>
+      <label for="tab-2" class="tab-2">Remote Acces</label>
+      <label for="tab-3" class="tab-3">Grabbing SosMed</label>
+      <div class="slider"></div>
+    </header>
+    <div class="card-area">
+      <br/>
+      <div class="cards">
+        <div class="row row-1">
+          <ul class="features">
+            <li>
+              <h4><b>Choice Method</b></h4>
+              <hr/>
+              <br/>
+              <p style="color:red"><b>GSM</b>
+                <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label></p>
+            <br/>
+            <p style="color:red"><b>WhatsApp</b>
+                <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span></p>
+                <br/>
+                <div class="comment">
+                  <textarea class="textinput" placeholder="No. Handphone"></textarea>
+              </div>
+              <br/>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <ul class="features">
+            <li>
+              <h4><b>Choice Method</b></h4>
+              <hr/>
+              <br/>             
+              <p style="color:red"><b>GSM</b>
+              <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label></p>
+          <br/>
+          <p style="color:red"><b>WhatsApp</b>
+              <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span></p>
+              <br/>
+              <div class="comment">
+                <textarea class="textinput" placeholder="No. Handphone"></textarea>
+            </div>
+            <br/>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <ul class="features">
+            <li>
+              <h4><b>Choice Social Media</b></h4>
+              <hr/>
+              <br/>
+              <p style="color:red"><b>Facebook</b>
+                <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label></p>
+            <br/>
+            <p style="color:red"><b>Twitter</b>
+                <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span></p>
+                <br/>
+            <p style="color:red"><b>Instagram</b>
+                <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span></p>
+                <br/>
+            <p style="color:red"><b>Tik Tok</b>
+                <label class="switch">
+                 <input type="checkbox">
+                <span class="slider round"></span></p>
+                <br/> 
+                <div class="comment">
+                  <textarea class="textinput" placeholder="Account Name"></textarea>
+              </div>
+              <br/>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br/>
+      <div class="cards">
+        <div class="row1">
+          <ul class="features">
+           <li>
+            <h4><b>Case Description<a style="color:red">*</a></b></h4>
+            <div class="comment">
+              <textarea class="comment-text-area" placeholder=""></textarea>
+            </div>
+        <br/>
+  </div>
+  <div class="cards">
+    <div class="row2">
+        <div class="file-search-button">
+            <label for="file-upload"  id="button" class="custom-file-upload">
+              <i class="fa fa-paperclip right" aria-hidden="true"></i><b>  Attach File</b> 
+              <div class="fileName">
+                <a></a>
+              </div>
+            </label>
+            <input id="file-upload" type="file"/>
+          </div>
+        <button id="button"><b>Submit</b></button>
+</div>
+
+
+
+<script>
+  const fileName = document.querySelector(".fileName");
+  
+  const fileInput = document.querySelector("input[type=file]");
+  fileInput.addEventListener("change", function() {
+      if (this.files && this.files[0]) {
+          fileName.innerHTML = this.files[0].name;
+      }
+  });
+  
+  </script>
+</body>
+</html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width:100%;
+  background: rgb(176, 176, 176);
+}
+.left{
+    float: left;
+    display: block;
+  }
+.right{
+    float: right;
+    display: block;
+  }
+.center{
+    float: center;
+    display: block;
+  }
+.wrapper{
+      width: 100%;
+      background: rgba(216, 216, 216, 0);
+      border-radius: 16px;
+      padding: 10px;
+      box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    }
+    .wrapper1{
+      width: 100%;
+      background: #fff;
+      border-radius: 4px;
+      padding: 0px;
+      box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    }
+      .wrapper2{
+      width: 400px;
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    }
+    .wrapper header{
+      height: 30px;
+      width: 100%;
+      display: flex;
+      background: #fff;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      position: relative;
+    }
+    .wrapper description{
+      height: 30px;
+      width: 100%;
+      display: flex;
+      background: #fff;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      position: relative;
+    }
+    header label{
+      height: 100%;
+      z-index: 2;
+      width: 30%;
+      display: flex;
+      cursor: pointer;
+      font-size: 8px;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.3s ease;
+    }
+#tab-1:checked ~ header .tab-1,
+#tab-2:checked ~ header .tab-2,
+#tab-3:checked ~ header .tab-3{
+  color: #fff;
+}
+header label:nth-child(2){
+  width: 40%;
+}
+header .slider{
+  position: absolute;
+  height: 90%;
+  border-radius: inherit;
+  background: #ff0000;
+  transition: all 0.3s ease;
+}
+#tab-1:checked ~ header .slider{
+  left: 0%;
+  width: 33%;
+  transform: translateX(5%);
+}
+#tab-2:checked ~ header .slider{
+  left: 50%;
+  width: 33%;
+  transform: translateX(-50%);
+}
+#tab-3:checked ~ header .slider{
+  left: 100%;
+  width: 33%;
+  transform: translateX(-105%);
+}
+.wrapper input[type="radio"]{
+  display: none;
+}
+.card-area{
+  overflow: hidden;
+}
+.card-area .cards{
+  display: flex;
+  width: 300%;
+  
+}
+.cards .row{
+  width: 33.4%;
+}
+.cards .row1{
+  width: 100%;
+}
+.cards .row-1{
+  transition: all 0.3s ease;
+}
+#tab-1:checked ~ .card-area .cards .row-1{
+   margin-left: 0%;
+}
+#tab-1:checked~ .card-area .cards{
+    margin-bottom: -80px;
+}
+#tab-2:checked ~ .card-area .cards .row-1{
+  margin-left: -33.4%;
+}
+#tab-2:checked~ .card-area .cards{
+    margin-bottom: -80px;
+}
+#tab-3:checked ~ .card-area .cards .row-1{
+   margin-left: -66.8%;
+}
+#tab-3:checked~ .card-area .cards{
+    margin-bottom: 10px;
+}
+.row .features  li{
+  font-size: 15px;
+  list-style: none;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.row  ul{
+  font-size: 15px;
+  list-style: none;
+  background: #fff;
+  align-items: center;
+  border: 1px solid #ccc;
+  
+  border-radius: 15px;
+  align-items: center;
+}
+
+.row .features .li p{
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+
+.cards .row1{
+  width: 100%;
+}
+.row1 .features  li{
+  font-size: 15px;
+  list-style: none;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.row1  ul{
+  font-size: 15px;
+  list-style: none;
+  height:230px;
+  background: #fff;
+  align-items: center;
+  border: 1px solid #ccc;
+  
+  border-radius: 15px;
+  align-items: center;
+}
+.row2  ul{
+  font-size: 15px;
+  padding: 10px 0 0 20px;
+  list-style: none;
+  height:50px;
+  background: #fff;
+  align-items: center;
+  border: 1px solid #ccc;
+  
+  border-radius: 15px;
+  align-items: center;
+}
+
+.row1 .features .li p{
+  font-size: 18px;
+  margin-top: 5px;
+}
+.row1 .features .li .comment-text-area {
+    float: left;
+    margin: 50px;
+    padding-inline-start: 20px;
+    width: 100%;
+    min-height: 20%;
+    outline: none;
+    resize: vertical;
+    background-color:  #ccc;
+    border-radius: 15px;
+}
+.features li i{
+  background: #ff0000;
+  background-clip: text;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.features li span{
+  margin-left: 10px;
+}
+.wrapper button{
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  height: 50px;
+  font-size: 18px;
+  color: #000;
+  
+  cursor: pointer;
+  margin-top: 20px;
+  background: #ccc;
+  transition: transform 0.3s ease;
+}
+.wrapper button a{
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  height: 50px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  background: rgb(255, 0, 0);
+  transition: transform 0.3s ease;
+}
+.wrapper button:hover{
+  transform: scale(0.98);
+}
+/*--------------------------------------------------------------
+icon
+--------------------------------------------------------------*/
+.features .switch{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+    float:right;
+  }
+  
+  .features .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .features .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .features .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4.5px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #ff0000;
+  }
+  
+  input:focus +  .slider {
+    box-shadow: 0 0 1px #ff0000;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 30px;
+    width: 100%;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(176, 176, 176);
+}
+.nav1   {
+    width:100%;
+    height: 13%;
+    background-color: #ff0000;
+}
+
+.header-text{
+    font-weight: 500;
+    font-size: 1rem;
+    font-style: normal;
+    align-items: left ;
+    padding-left: 10%;
+    padding-top: 60px;
+    color:#ffffff;
+
+
+
+}
+.comment {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.commenter {
+    float: left;
+}
+
+.commenter img {
+    width: 35px;
+    height: 35px;
+}
+
+.comment-text-area {
+    float: left;
+    width: 100%;
+    height: 150px;
+    outline: none;
+    resize: none;
+    background-color:  #ccc;
+    border-radius: 20px;
+}
+
+
+/*--------------------------------------------------------------
+text box
+--------------------------------------------------------------*/
+
+.comment {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.commenter {
+    float: left;
+    padding-top: 10px;
+}
+
+.commenter img {
+    width: 30px;
+    height: 30px;
+}
+.textinput {
+    float: left;
+    margin-top: 0px;
+    padding-inline-start: 20px;
+    width: 100%;
+    min-height: 20%;
+    outline: none;
+    resize: none;
+    background-color:  #ccc;
+    border-radius: 99px;
+}
+#button:hover{
+background-color:red;
+transition: 0.3s ease;
+letter-spacing: 5px;
+color: #fff;
+}
+
+.up{
+    margin: 0 auto;
+    text-align: center ;
+    margin-top: 200px;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  .fileName{
+    margin-top: 20px;
+    align-items:flex-end;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    width: 220px;
+  }
+  
+  .custom-file-upload {
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #fff;
+    
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .file-search-button{
+    margin-top: 30px;
+  }
+
+</style>
